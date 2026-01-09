@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emannuel Henji | Mazedev</title>
+    <link rel="stylesheet" href="static/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+<body class="bg-black text-white">
+    <nav class="sticky top-0 z-50 w-full backdrop-blur bg-black/70">
+        <div class="max-w-7xl mx-auto px-4">
+
+        <!-- Top Bar -->
+        <div class="flex items-center justify-between h-16 mx-3">
+            <!-- Brand -->
+            <h2 class="text-lg text-yellow-400 font-bold">Mazedev</h2>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#header" class="hover:text-yellow-400 transition">Beranda</a></li>
+                <li><a href="#tentang" class="hover:text-yellow-400 transition">Tentang</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400 transition">Skills</a></li>
+                <li><a href="#proyek" class="hover:text-yellow-400 transition">Proyek</a></li>
+                <li><a href="#kontak" class="hover:text-yellow-400 transition">Kontak</a></li>
+            </ul>
+
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden text-yellow-400 text-2xl hover:text-yellow-300 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="absolute top-full left-0 w-full bg-black/70 opacity-0 -translate-y-4 py-4 pointer-events-none transition-all duration-300 ease-in-out">
+            <li class="flex flex-col gap-4 ml-6">
+                <a href="#header" class="block hover:text-yellow-400 transition">Beranda</a>
+                <a href="#tentang" class="block hover:text-yellow-400 transition">Tentang</a>
+                <a href="#skills" class="block hover:text-yellow-400 transition">Skills</a>
+                <a href="#proyek" class="block hover:text-yellow-400 transition">Proyek</a>
+                <a href="#kontak" class="block hover:text-yellow-400 transition">Kontak</a>
+            </li>
+        </ul>
+
+        </div>
+    </nav>
+
+    <section id="header" class="scroll-mt-10">
+        <header class="w-full h-screen flex flex-col justify-center items-center text-center px-4 -translate-y-10">
+            <img src="./static/src/img/profile.png" alt="foto profil" class=" w-[250px] h-[250px] object-cover border-yellow-500 rounded-full mb-6 border-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Emannuel Henji</h1>
+            <p class="text-xl md:text-2xl mb-8">Pengembang Perangkat Lunak & Desainer Web</p>
+            <a href="#proyek" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 hover:scale-110 hover:animate-pulse transition">Lihat Proyek Saya</a>
+        </header>
+    </section>
+    <section id="tentang">
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Tentang Saya</h2>
+            <p class="text-lg mb-4">Halo! Saya Emannuel Henji, seorang pengembang perangkat lunak dan desainer web dengan passion dalam menciptakan solusi digital yang inovatif dan menarik. Dengan pengalaman dalam berbagai teknologi web, saya berkomitmen untuk memberikan hasil terbaik bagi klien saya.</p>
+            <p class="text-lg">Saya percaya bahwa teknologi dapat mengubah dunia, dan saya bersemangat untuk menjadi bagian dari perubahan tersebut melalui karya saya.</p>
+        </div>
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Riwayat Pendidikan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-800 p-6 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/untidar.png" alt="untidar" class="h-80 w-72 object-cover mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Universitas Tidar</h3>
+                    <p class="text-lg">2025 - sekarang</p>
+                    <p class="mt-2">S1 - Teknologi Informasi</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/sman2magelang.webp" alt="smada" class="h-80 w-72 object-cover mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">SMA Negeri 2 Magelang</h3>
+                    <p class="text-lg">2022 - 2025</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/smpn1magelang.jpg" alt="smpn1magelang" class="h-80 w-72 object-cover mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">SMP Negeri 1 Magelang</h3>
+                    <p class="text-lg">2019 - 2022</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Pengalaman</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-gray-800 p-4 rounded-md text-white flex items-center hover:scale-105 transition">
+                    <img src="./static/src/img/mpk.png" alt="Logo MPK" class="w-32 h-32">
+                    <div class="ml-4 px-2 flex flex-col justify-center text-left">
+                        <h3 class="text-2xl text-left font-semibold mb-2">MPK SMA Negeri 2 Magelang</h3>
+                        <p class="text-lg text-left">2023 - 2024</p>
+                        <p class="mt-2">Ketua Umum</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md text-white flex items-center hover:scale-105 transition">
+                    <img src="./static/src/img/logosmada.jpg" alt="Logo smada" class="w-32 h-32 rounded-full">
+                    <div class="ml-4 px-2 flex flex-col justify-center text-left">
+                        <h3 class="text-2xl text-left font-semibold mb-2">MUDIKA SMA Negeri 2 Magelang</h3>
+                        <p class="text-lg text-left">2023 - 2024</p>
+                        <p class="mt-2">Sekretaris</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section id="skills">
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+                <div class="bg-gray-800 p-4 rounded-md text-white text">
+                    <h3 class="text-2xl text-yellow-400 font-semibold mb-3">Soft Skills</h3>
+                    <div class="flex flex-col p-4 gap-4">
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check" style="color: #eec944;"></i>
+                            <p class="text-lg">Kepemimpinan</p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check mt-2" style="color: #eec944;"></i>
+                            <p class="text-lg mt-2">Public Speaking</p>
+                            
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check mt-2" style="color: #eec944;"></i>
+                            <p class="text-lg mt-2">Kerja Sama Tim</p>
+                            
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check mt-2" style="color: #eec944;"></i>
+                            <p class="text-lg mt-2">Problem Solving</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md text-white text">
+                    <h3 class="text-2xl text-yellow-400 font-semibold mb-3">Hard Skills</h3>
+                    <div class="flex flex-col p-4 gap-4">
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check" style="color: #eec944;"></i>
+                            <p class="text-lg">Pemrograman (Javascript, Python)</p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check mt-2" style="color: #eec944;"></i>
+                            <p class="text-lg mt-2">Web Development</p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center">
+                            <i class="fa-solid fa-check mt-2" style="color: #eec944;"></i>
+                            <p class="text-lg mt-2">Microsoft Office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+                <h2 class="text-4xl font-bold mb-6 text-yellow-400">Tech</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-html5-plain text-orange-500 text-5xl"></i>
+                        <p class="mt-1">HTML 5</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-css3-plain text-blue-500 text-5xl"></i>
+                        <p class="mt-1">CSS 3</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-javascript-plain text-yellow-400 text-5xl"></i>
+                        <p class="mt-1">Javascript</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-python-plain text-blue-400 text-5xl"></i>
+                        <p class="mt-1">Python</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-django-plain text-green-600 text-5xl"></i>
+                        <p class="mt-1">Django</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 m-2 rounded-md text-white flex flex-col items-center hover:scale-110 hover:animate-pulse transition">
+                        <i class="devicon-tailwindcss-plain text-sky-400 text-5xl"></i>
+                        <p class="mt-1">Tailwind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyek">
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Proyek Saya</h2>
+            <p class="text-lg mb-8">Pengalaman Proyek yang membentuk keahlian saya</p>
+            <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+                <div class="bg-gray-800 p-4 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/myfinance.png" alt="Preview Proyek" class="w-96 mt-3 object-cover mb-4 rounded-md mx-auto">
+                    <h3 class="text-2xl font-semibold mb-2">My Finance</h3>
+                    <p class="text-sm">Sebuah website pencatatan keuangan. Catat dan kelola keuangan anda kapanpun dan dimanapun</p>
+                    <div class="grid grid-cols-4 mt-4 gap-4 justify-center">
+                        <i class="devicon-html5-plain text-orange-500 text-4xl"></i>
+                        <i class="devicon-css3-plain text-blue-500 text-4xl"></i>
+                        <i class="devicon-javascript-plain text-yellow-400 text-4xl"></i>
+                        <i class="devicon-python-plain text-blue-400 text-4xl"></i>
+                        <i class="devicon-django-plain text-green-600 text-4xl"></i>
+                        <i class="devicon-tailwindcss-plain text-sky-400 text-4xl"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/aspirasiku.png" alt="Preview Proyek" class="w-96 mt-3 mx-auto object-cover mb-4 rounded-md">
+                    <h3 class="text-2xl font-semibold mb-2">Aspirasiku</h3>
+                    <p class="text-sm">Sebuah website penampung aspirasi siswa. Saat ini dikelola oleh MPK SMA Negeri 2 Magelang</p>
+                    <div class="grid grid-cols-4 mt-4 gap-4 justify-center">
+                        <i class="devicon-html5-plain text-orange-500 text-4xl"></i>
+                        <i class="devicon-css3-plain text-blue-500 text-4xl"></i>
+                        <i class="devicon-javascript-plain text-yellow-400 text-4xl"></i>
+                        <i class="devicon-php-plain text-violet-400 text-4xl"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md text-white hover:scale-105 transition">
+                    <img src="./static/src/img/guestbook.jpg" alt="Preview Proyek" class="w-96 mt-3 mx-auto object-cover mb-4 rounded-md">
+                    <h3 class="text-2xl font-semibold mb-2">Guestbook Website</h3>
+                    <p class="text-sm">Sebuah website pencatat daftar hadir. Digunakan untuk mendukung pencatatan kehadiran pengunjung di pameran lukisan SMA Negeri 2 Magelang</p>
+                    <div class="grid grid-cols-4 mt-4 gap-4 justify-center">
+                        <i class="devicon-html5-plain text-orange-500 text-4xl"></i>
+                        <i class="devicon-css3-plain text-blue-500 text-4xl"></i>
+                        <i class="devicon-javascript-plain text-yellow-400 text-4xl"></i>
+                        <i class="devicon-php-plain text-violet-400 text-4xl"></i>
+                        <i class="devicon-bootstrap-plain text-violet-500 text-4xl"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <div class="w-full max-w-4xl mx-auto py-16 px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-400">Kontak Saya</h2>
+            <p class="text-lg mb-4">Saya terbuka untuk peluang kolaborasi dan proyek baru. Jangan ragu untuk menghubungi saya melalui email atau media sosial di bawah ini:</p>
+            <p class="text-lg mb-8">Email: <a href="mailto:emannuelhenji521@gmail.com" class="text-yellow-400 hover:text-yellow-300 transition">emannuelhenji521@gmail.com</a></p>
+            <div class="flex justify-center space-x-6"> 
+                <a href="https://www.linkedin.com/in/emannuel-henji-634b2523b/" target="_blank" class="text-yellow-400 text-5xl hover:text-yellow-300 hover:scale-110 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/emannuelhenji_21" target="_blank" class="text-yellow-400 text-5xl hover:text-yellow-300 hover:scale-110 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://emannuelhenji.medium.com" target="_blank" class="text-yellow-400 text-5xl hover:text-yellow-300 hover:scale-110 transition"><i class="fa-brands fa-medium"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900/90 text-gray-400 text-center py-4">
+        <p>Built with Tailwind CSS & ❤️ by Henji</p>
+        <p>&copy; 2025 Emannuel Henji. All rights reserved.</p>
+    </footer>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('-translate-y-4');
+        menu.classList.toggle('pointer-events-none');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+     });
+    });
+
+</script>
+</body>
+
+</html>
