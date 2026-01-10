@@ -1,16 +1,11 @@
 # Node.js dependencies
 node_modules/
 
-# Tailwind & build config
-tailwind.config.js
-package.json
-package-lock.json
-
-# Source & build input
-input.css
-
 # VS Code settings
 .vscode/
+
+#output css
+output.css
 
 # Environment files (optional, but recommended)
 .env
