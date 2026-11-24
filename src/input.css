@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-surface: #ffffff;
+  --bg-container: #f8f9fc;
+  --bg-container-high: #eff2f7;
+  --text-primary: #121317;
+  --text-secondary: #45474d;
+  --border-hairline: #e1e6ec;
+  --accent-blue: #3279f9;
+  --btn-primary-bg: #121317;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #2f3034;
+  --inverse-bg: #121317;
+  --inverse-text: #f8f9fc;
+  --inverse-muted: #b2bbc5;
+}
+
+html.dark {
+  --bg-surface: #121317;
+  --bg-container: #18191d;
+  --bg-container-high: #212226;
+  --text-primary: #f8f9fc;
+  --text-secondary: #b2bbc5;
+  --border-hairline: #2f3034;
+  --accent-blue: #5b97ff;
+  --btn-primary-bg: #f8f9fc;
+  --btn-primary-text: #121317;
+  --btn-primary-hover: #e1e6ec;
+  --inverse-bg: #18191d;
+  --inverse-text: #f8f9fc;
+  --inverse-muted: #b2bbc5;
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    font-family: "Google Sans Flex", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a[href],
+  button,
+  summary,
+  select,
+  label[for],
+  [role="button"],
+  [role="tab"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+.ag-btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.ag-btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.ag-btn-secondary {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-hairline);
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.ag-btn-secondary:hover {
+  background-color: var(--bg-container-high);
+}
+
+.ag-orbit-circle {
+  background-color: var(--bg-container);
+  border: 1px solid var(--border-hairline);
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.ag-orbit-circle:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
